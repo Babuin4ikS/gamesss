@@ -9,3 +9,7 @@
     left: 50%;
     transform: translate(-50%, -10%);
 }
+
+body{
+	max-width: max-content;
+}
