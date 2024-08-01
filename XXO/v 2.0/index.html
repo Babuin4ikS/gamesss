@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+        <link rel="stylesheet" href="styles/style.css">
+        <title>XO - Game</title>
+    </head>
+
+    <body>
+        <header>
+            <section class="upper-section">
+                <img src="assets/logo.svg" alt="logo">
+                <h2>
+                    <section class="turn">X</section>
+                </h2>
+                <div role="button" class="restart-btn"></div>
+            </section>
+        </header>
+
+        <main>
+
+
+            <section class="game-board">
+                <div class="game-board__field" data-index="0-0" role="button">
+                    <div class="game-board__state" data-field-state='' data-field-turn=""></div>
+                </div>
+                <div class="game-board__field" data-index="0-1" role="button">
+                    <div class="game-board__state" data-field-state='' data-field-turn=""></div>
+                </div>
+                <div class="game-board__field" data-index="0-2" role="button">
+                    <div class="game-board__state" data-field-state='' data-field-turn=""></div>
+                </div>
+                <div class="game-board__field" data-index="1-0" role="button">
+                    <div class="game-board__state" data-field-state='' data-field-turn=""></div>
+                </div>
+                <div class="game-board__field" data-index="1-1" role="button">
+                    <div class="game-board__state" data-field-state='' data-field-turn=""></div>
+                </div>
+                <div class="game-board__field" data-index="1-2" role="button">
+                    <div class="game-board__state" data-field-state='' data-field-turn=""></div>
+                </div>
+                <div class="game-board__field" data-index="2-0" role="button">
+                    <div class="game-board__state" data-field-state='' data-field-turn=""></div>
+                </div>
+                <div class="game-board__field" data-index="2-1" role="button">
+                    <div class="game-board__state" data-field-state='' data-field-turn=""></div>
+                </div>
+                <div class="game-board__field" data-index="2-2" role="button">
+                    <div class="game-board__state" data-field-state='' data-field-turn=""></div>
+                </div>
+            </section>
+
+            <secction class="stats-section">
+                <section>
+                    <h4>Player X</h4>
+                    <h2 id="player-x">0</h2>
+                </section>
+                <section>
+                    <h4>Ties</4>
+                        <h2 id="ties">0</h2>
+                </section>
+                <section>
+                    <h4>Player O</h4>
+                    <h2 id="player-o">0</h2>
+                </section>
+            </secction>
+        </main>
+
+        <section class="result disabled">
+            <p>Congratulations !</p>
+            <h2>
+                <section></section>
+                <section>Takes the Round</section>
+            </h2>
+            <section>
+                <div role="button"">Quit</div>
+                <div role=" button">Next Round</div>
+            </section>
+        </section>
+
+
+
+        <script src="scripts/script.js"></script>
+    </body>
+
+</html>
