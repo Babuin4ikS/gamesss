@@ -204,7 +204,7 @@ main {
 		grid-template-rows: 20% 60% 20%;
 	}
 	.upper-section {
-		width: unset;
+		width: 100%;
 		justify-content: space-between;
 		padding-inline: calc(100% / 10);
 		display: grid;
