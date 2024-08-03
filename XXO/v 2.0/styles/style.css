@@ -194,3 +194,37 @@ main {
 .game-board__field [data-field-turn='turn-o']:active {
 	background-image: url(../assets/icon-o-gray.svg);
 }
+
+/* ----------------------------------------- */
+
+@media only screen and (max-width: 700px) {
+	body {
+		padding-block: 7%;
+		place-items: unset;
+		grid-template-rows: 20% 60% 20%;
+	}
+	.upper-section {
+		width: unset;
+		justify-content: space-between;
+		padding-inline: calc(100% / 10);
+		display: grid;
+		grid-template-areas: 'a b' 'c c';
+	}
+	.upper-section h2 {
+		grid-area: c;
+		max-width: fit-content;
+		margin-inline: auto;
+	}
+	main {
+		width: unset;
+		max-width: unset;
+		min-width: unset;
+		justify-content: center;
+	}
+
+
+	.stats-section section {
+		height: fit-content;
+		align-self: last baseline;
+	}
+}
